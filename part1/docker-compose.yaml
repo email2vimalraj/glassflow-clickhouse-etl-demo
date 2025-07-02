@@ -34,7 +34,7 @@ services:
       - app
     volumes:
       - logs:/logs:ro
-      - ./nginx:/etc/nginx/templates
+      - ../nginx:/etc/nginx/templates
     restart: unless-stopped
     environment:
       NGINX_ENTRYPOINT_LOCAL_RESOLVERS: true
